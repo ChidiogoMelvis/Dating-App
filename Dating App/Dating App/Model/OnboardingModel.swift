@@ -7,13 +7,12 @@
 
 import Foundation
 import UIKit
-
+// MARK: The Model data for the onboarding cells
 struct OnboardingModel {
     let image: UIImage?
     let titleLabel: String
     let subTitleLabel: String
 }
-
 
 var items = [
     OnboardingModel(image: UIImage(systemName: "heart.fill"), titleLabel: "Get a Date", subTitleLabel: "Swipe right to get a match with \n people you like from your area"),

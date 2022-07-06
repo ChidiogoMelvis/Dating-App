@@ -7,9 +7,9 @@
 
 import UIKit
 // MARK: - Elements/Properties in the Onboarding View controller
-class OnboardingViewController: UIViewController, UIViewControllerTransitioningDelegate {
+class OnboardingViewController: UIViewController {
     
-    var itemsArray: [OnboardingModel] = [] 
+    var itemsArray: [OnboardingModel] = []
     
     // MARK: Previous Button Properties
     lazy var previousButton: UIButton = {
@@ -85,7 +85,7 @@ class OnboardingViewController: UIViewController, UIViewControllerTransitioningD
     // MARK: This next action button presents the chatscreenviewcontroller at the last screen cells or swipes to the button at the first screen cells
     @objc func nextBtnAction() {
         if pageControl.currentPage == items.count - 1 {
-            let nextScreen = ChatScreenViewController()
+            let nextScreen = HomeTabBarViewController()
             nextScreen.modalPresentationStyle = .fullScreen
             nextScreen.modalTransitionStyle = .coverVertical
             self.present(nextScreen, animated: true, completion: nil)
@@ -122,9 +122,7 @@ class OnboardingViewController: UIViewController, UIViewControllerTransitioningD
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
         ])
-        
     }
 }
 

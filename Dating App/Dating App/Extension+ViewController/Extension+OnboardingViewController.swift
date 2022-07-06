@@ -11,7 +11,7 @@ import UIKit
 // MARK: Protocols for the datasource and delegate of the collectionview
 extension OnboardingViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -24,5 +24,4 @@ extension OnboardingViewController: UICollectionViewDataSource, UICollectionView
         
         return cell
     }
-    
 }

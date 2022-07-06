@@ -17,7 +17,6 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         img.translatesAutoresizingMaskIntoConstraints = false
         img.layer.cornerRadius = 10
         img.clipsToBounds = true
-        
         return img
     }()
     
@@ -42,13 +41,11 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-        
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpviews()
-        
     }
     
     // MARK: The contraints of the cells
@@ -70,13 +67,9 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
             subTitleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             subTitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             subTitleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            
         ])
-        
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
