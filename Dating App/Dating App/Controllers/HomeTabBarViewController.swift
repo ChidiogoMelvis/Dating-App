@@ -61,15 +61,10 @@ class MessagesViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let chatScreen = ChatsViewController()
-        chatScreen .modalPresentationStyle = .fullScreen
-        chatScreen .modalTransitionStyle = .coverVertical
+        chatScreen.modalPresentationStyle = .fullScreen
+        chatScreen.modalTransitionStyle = .coverVertical
         show(chatScreen, sender: self)
         chatScreen.chatsLabel.text = chatModel[indexPath.row].name
-    }
-    
-    func pushView() {
-        let controller = UINavigationController(rootViewController: ChatsViewController())
-        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     // MARK: MessagesViewController Properties
