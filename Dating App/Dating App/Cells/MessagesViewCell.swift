@@ -8,7 +8,7 @@
 import UIKit
 // MARK: The Message cells
 class MessagesViewCell: UICollectionViewCell {
-    var arrayMessages: [ChatModel] = []
+    
     lazy var displayImage: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false

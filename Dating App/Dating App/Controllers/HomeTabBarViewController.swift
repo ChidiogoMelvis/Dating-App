@@ -43,28 +43,17 @@ class HomeTabBarViewController: UITabBarController {
 // MARK: The first view controller of the tabbar controller, subclassing and conforming to collectionview protocols
 class MessagesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chatModel.count
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MessagesViewCell", for: indexPath) as! MessagesViewCell
-        cell.displayImage.image = chatModel[indexPath.row].displayImage
-        cell.nameLabel.text = chatModel[indexPath.row].name
-        cell.messageLabel.text = chatModel[indexPath.row].text
-        cell.timeLabel.text = chatModel[indexPath.row].time
+        cell.backgroundColor = .brown
         return cell
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 100)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let chatScreen = ChatsViewController()
-        chatScreen.modalPresentationStyle = .fullScreen
-        chatScreen.modalTransitionStyle = .coverVertical
-        show(chatScreen, sender: self)
-        chatScreen.chatsLabel.text = chatModel[indexPath.row].name
     }
     
     // MARK: MessagesViewController Properties

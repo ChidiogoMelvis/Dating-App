@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4699C2C2875E7A300F2BF99 /* Extension+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4699C2B2875E7A300F2BF99 /* Extension+Profile.swift */; };
-		B4699C2E287611C200F2BF99 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4699C2D287611C200F2BF99 /* ChatsViewController.swift */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -19,13 +17,10 @@
 		B49CBB442871EF56000C8308 /* Extension+OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB432871EF56000C8308 /* Extension+OnboardingViewController.swift */; };
 		B49CBB462871F76E000C8308 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB452871F76E000C8308 /* OnboardingCollectionViewCell.swift */; };
 		B4ABDEA2287370D30012F7AF /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEA1287370D30012F7AF /* HomeTabBarViewController.swift */; };
-		B4ABDEAF28748E810012F7AF /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEAE28748E810012F7AF /* ChatModel.swift */; };
 		B4ABDEB1287583EA0012F7AF /* MessagesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEB0287583EA0012F7AF /* MessagesViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B4699C2B2875E7A300F2BF99 /* Extension+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Profile.swift"; sourceTree = "<group>"; };
-		B4699C2D287611C200F2BF99 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		B49CBB28287058A2000C8308 /* Dating App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB2B287058A2000C8308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49CBB2D287058A2000C8308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +33,6 @@
 		B49CBB432871EF56000C8308 /* Extension+OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+OnboardingViewController.swift"; sourceTree = "<group>"; };
 		B49CBB452871F76E000C8308 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4ABDEA1287370D30012F7AF /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
-		B4ABDEAE28748E810012F7AF /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		B4ABDEB0287583EA0012F7AF /* MessagesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +84,6 @@
 				B49CBB2F287058A2000C8308 /* ViewController.swift */,
 				B49CBB3F2871C154000C8308 /* OnboardingViewController.swift */,
 				B4ABDEA1287370D30012F7AF /* HomeTabBarViewController.swift */,
-				B4699C2D287611C200F2BF99 /* ChatsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				B49CBB412871EAA5000C8308 /* OnboardingModel.swift */,
-				B4ABDEAE28748E810012F7AF /* ChatModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				B49CBB432871EF56000C8308 /* Extension+OnboardingViewController.swift */,
-				B4699C2B2875E7A300F2BF99 /* Extension+Profile.swift */,
 			);
 			path = "Extension+ViewController";
 			sourceTree = "<group>";
@@ -217,17 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4699C2C2875E7A300F2BF99 /* Extension+Profile.swift in Sources */,
 				B4ABDEA2287370D30012F7AF /* HomeTabBarViewController.swift in Sources */,
 				B49CBB30287058A2000C8308 /* ViewController.swift in Sources */,
 				B4ABDEB1287583EA0012F7AF /* MessagesViewCell.swift in Sources */,
 				B49CBB442871EF56000C8308 /* Extension+OnboardingViewController.swift in Sources */,
 				B49CBB422871EAA6000C8308 /* OnboardingModel.swift in Sources */,
-				B4ABDEAF28748E810012F7AF /* ChatModel.swift in Sources */,
 				B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */,
 				B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */,
 				B49CBB462871F76E000C8308 /* OnboardingCollectionViewCell.swift in Sources */,
-				B4699C2E287611C200F2BF99 /* ChatsViewController.swift in Sources */,
 				B49CBB402871C154000C8308 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
