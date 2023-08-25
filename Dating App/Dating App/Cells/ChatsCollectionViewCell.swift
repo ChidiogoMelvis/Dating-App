@@ -7,9 +7,9 @@
 
 import UIKit
 // MARK: The Message cells
-class MessagesViewCell: UICollectionViewCell {
+class ChatsCollectionViewCell: UICollectionViewCell {
     
-    lazy var displayImage: UIImageView = {
+    lazy var profileImage: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
@@ -20,32 +20,29 @@ class MessagesViewCell: UICollectionViewCell {
     
     lazy var nameLabel: UILabel = {
         let name = UILabel()
-        name.font = UIFont.systemFont(ofSize: 22, weight: .medium)
+        name.font = UIFont.systemFont(ofSize: 20, weight: .medium)
         name.translatesAutoresizingMaskIntoConstraints = false
-        name.textColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
         return name
     }()
     
     lazy var messageLabel: UILabel = {
         let text = UILabel()
-        text.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        text.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         text.translatesAutoresizingMaskIntoConstraints = false
-        text.textColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
         return text
     }()
     
-    lazy var timeLabel: UILabel = {
+    lazy var dateLabel: UILabel = {
         let time = UILabel()
         time.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         time.translatesAutoresizingMaskIntoConstraints = false
-        time.textColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
         return time
     }()
     
     lazy var messageView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        let cells = [nameLabel, messageLabel, timeLabel]
+        let cells = [nameLabel, messageLabel, dateLabel]
         for cell in cells {
             view.addSubview(cell)
         }
@@ -60,14 +57,14 @@ class MessagesViewCell: UICollectionViewCell {
     }
     
     func setUpViews() {
-        self.addSubview(displayImage)
+        self.addSubview(profileImage)
         self.addSubview(messageView)
         
         NSLayoutConstraint.activate([
-            displayImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            displayImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            displayImage.heightAnchor.constraint(equalToConstant: 60),
-            displayImage.widthAnchor.constraint(equalToConstant: 60),
+            profileImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            profileImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            profileImage.heightAnchor.constraint(equalToConstant: 60),
+            profileImage.widthAnchor.constraint(equalToConstant: 60),
             
             messageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             messageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 90),
@@ -80,8 +77,8 @@ class MessagesViewCell: UICollectionViewCell {
             messageLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
             messageLabel.leadingAnchor.constraint(equalTo: messageView.leadingAnchor),
             
-            timeLabel.topAnchor.constraint(equalTo: messageView.topAnchor),
-            timeLabel.trailingAnchor.constraint(equalTo: messageView.trailingAnchor),
+            dateLabel.topAnchor.constraint(equalTo: messageView.topAnchor),
+            dateLabel.trailingAnchor.constraint(equalTo: messageView.trailingAnchor),
         ])
     }
     

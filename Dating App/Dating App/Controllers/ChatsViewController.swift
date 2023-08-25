@@ -1,54 +1,26 @@
 //
-//  ChatScreenViewController.swift
+//  MessagesViewController.swift
 //  Dating App
 //
-//  Created by Decagon on 04/07/2022.
+//  Created by Mac on 25/08/2023.
 //
 
 import UIKit
-// MARK: The Tabbarcontrollers with its subviews of view controllers
-class HomeTabBarViewController: UITabBarController {
-    // MARK: Declaring the subview controllers into a navigation controller
-    let controllers = UITabBarController()
-    let firstVC = UINavigationController(rootViewController: MessagesViewController())
-    let secondVC = UINavigationController(rootViewController: FindDatesViewController())
-    let thirdVC = UINavigationController(rootViewController: ProfileViewController())
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupViewController()
-        view.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
-    }
-    
-    func setupViewController() {
-        let vcIcons = ["message.fill", "person.3.fill", "person.fill"]
-        
-        firstVC.title = "Chat"
-        secondVC.title = "Find"
-        thirdVC.title = "Profile"
-        
-        setViewControllers([firstVC, secondVC, thirdVC], animated: true)
-        tabBar.tintColor = #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1)
-        tabBar.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
-        tabBar.layer.cornerRadius = 20
-        tabBar.unselectedItemTintColor = #colorLiteral(red: 0.6784313725, green: 0.3843137255, blue: 0.6666666667, alpha: 1)
-        
-        guard let icons = self.tabBar.items else { return }
-        
-        for icon in 0...2 {
-            icons[icon].image = UIImage(systemName: vcIcons[icon])
-        }
-    }
-}
+
 // MARK: The first view controller of the tabbar controller, subclassing and conforming to collectionview protocols
-class MessagesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ChatsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MessagesViewCell", for: indexPath) as! MessagesViewCell
-        cell.backgroundColor = .brown
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MessagesViewCell", for: indexPath) as! ChatsCollectionViewCell
+        cell.backgroundColor = .lightGray
+        cell.profileImage.backgroundColor = .gray
+        cell.profileImage.layer.cornerRadius = 30
+        cell.nameLabel.text = "John doe"
+        cell.messageLabel.text = "John doe,John doe,John doe"
+        cell.dateLabel.text = "01-01-1960"
         return cell
         
     }
@@ -82,7 +54,7 @@ class MessagesViewController: UIViewController, UICollectionViewDataSource, UICo
         collectionview.dataSource = self
         collectionview.reloadData()
         collectionview.translatesAutoresizingMaskIntoConstraints = false
-        collectionview.register(MessagesViewCell.self, forCellWithReuseIdentifier: "MessagesViewCell")
+        collectionview.register(ChatsCollectionViewCell.self, forCellWithReuseIdentifier: "MessagesViewCell")
         view.addSubview(collectionview)
         
         return collectionview
@@ -116,18 +88,3 @@ class MessagesViewController: UIViewController, UICollectionViewDataSource, UICo
         ])
     }
 }
-// MARK: The Second view controller of the tabbar controller
-class FindDatesViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .orange
-    }
-}
-// MARK: The Third view controller of the tabbar controller
-class ProfileViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .green
-    }
-}
-

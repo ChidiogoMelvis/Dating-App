@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040F79822A98347400A1C08D /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79812A98347400A1C08D /* ChatsViewController.swift */; };
+		040F79842A9834C400A1C08D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79832A9834C400A1C08D /* ProfileViewController.swift */; };
+		040F79862A9834FC00A1C08D /* FindDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79852A9834FC00A1C08D /* FindDatesViewController.swift */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -16,11 +19,14 @@
 		B49CBB422871EAA6000C8308 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB412871EAA5000C8308 /* OnboardingModel.swift */; };
 		B49CBB442871EF56000C8308 /* Extension+OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB432871EF56000C8308 /* Extension+OnboardingViewController.swift */; };
 		B49CBB462871F76E000C8308 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB452871F76E000C8308 /* OnboardingCollectionViewCell.swift */; };
-		B4ABDEA2287370D30012F7AF /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEA1287370D30012F7AF /* HomeTabBarViewController.swift */; };
-		B4ABDEB1287583EA0012F7AF /* MessagesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEB0287583EA0012F7AF /* MessagesViewCell.swift */; };
+		B4ABDEA2287370D30012F7AF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEA1287370D30012F7AF /* TabBarViewController.swift */; };
+		B4ABDEB1287583EA0012F7AF /* ChatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEB0287583EA0012F7AF /* ChatsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040F79812A98347400A1C08D /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		040F79832A9834C400A1C08D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		040F79852A9834FC00A1C08D /* FindDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDatesViewController.swift; sourceTree = "<group>"; };
 		B49CBB28287058A2000C8308 /* Dating App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB2B287058A2000C8308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49CBB2D287058A2000C8308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +38,8 @@
 		B49CBB412871EAA5000C8308 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		B49CBB432871EF56000C8308 /* Extension+OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+OnboardingViewController.swift"; sourceTree = "<group>"; };
 		B49CBB452871F76E000C8308 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
-		B4ABDEA1287370D30012F7AF /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
-		B4ABDEB0287583EA0012F7AF /* MessagesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewCell.swift; sourceTree = "<group>"; };
+		B4ABDEA1287370D30012F7AF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B4ABDEB0287583EA0012F7AF /* ChatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +89,10 @@
 			children = (
 				B49CBB2F287058A2000C8308 /* ViewController.swift */,
 				B49CBB3F2871C154000C8308 /* OnboardingViewController.swift */,
-				B4ABDEA1287370D30012F7AF /* HomeTabBarViewController.swift */,
+				B4ABDEA1287370D30012F7AF /* TabBarViewController.swift */,
+				040F79852A9834FC00A1C08D /* FindDatesViewController.swift */,
+				040F79812A98347400A1C08D /* ChatsViewController.swift */,
+				040F79832A9834C400A1C08D /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -109,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B49CBB452871F76E000C8308 /* OnboardingCollectionViewCell.swift */,
-				B4ABDEB0287583EA0012F7AF /* MessagesViewCell.swift */,
+				B4ABDEB0287583EA0012F7AF /* ChatsCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -208,13 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4ABDEA2287370D30012F7AF /* HomeTabBarViewController.swift in Sources */,
+				040F79822A98347400A1C08D /* ChatsViewController.swift in Sources */,
+				B4ABDEA2287370D30012F7AF /* TabBarViewController.swift in Sources */,
 				B49CBB30287058A2000C8308 /* ViewController.swift in Sources */,
-				B4ABDEB1287583EA0012F7AF /* MessagesViewCell.swift in Sources */,
+				B4ABDEB1287583EA0012F7AF /* ChatsCollectionViewCell.swift in Sources */,
 				B49CBB442871EF56000C8308 /* Extension+OnboardingViewController.swift in Sources */,
 				B49CBB422871EAA6000C8308 /* OnboardingModel.swift in Sources */,
+				040F79842A9834C400A1C08D /* ProfileViewController.swift in Sources */,
 				B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */,
 				B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */,
+				040F79862A9834FC00A1C08D /* FindDatesViewController.swift in Sources */,
 				B49CBB462871F76E000C8308 /* OnboardingCollectionViewCell.swift in Sources */,
 				B49CBB402871C154000C8308 /* OnboardingViewController.swift in Sources */,
 			);
