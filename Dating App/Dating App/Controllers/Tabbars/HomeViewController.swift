@@ -8,25 +8,7 @@
 import UIKit
 
 // MARK: The first view controller of the tabbar controller, subclassing and conforming to collectionview protocols
-class ChatsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MessagesViewCell", for: indexPath) as! ChatsCollectionViewCell
-        cell.backgroundColor = .lightGray
-        cell.profileImage.backgroundColor = .gray
-        cell.profileImage.layer.cornerRadius = 30
-        cell.nameLabel.text = "John doe"
-        cell.messageLabel.text = "John doe,John doe,John doe"
-        cell.dateLabel.text = "01-01-1960"
-        return cell
-        
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 100)
-    }
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     // MARK: MessagesViewController Properties
     lazy var messagesLabel: UILabel = {
@@ -86,5 +68,29 @@ class ChatsViewController: UIViewController, UICollectionViewDataSource, UIColle
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
         ])
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MessagesViewCell", for: indexPath) as! ChatsCollectionViewCell
+        cell.backgroundColor = .lightGray
+        cell.profileImage.backgroundColor = .gray
+        cell.profileImage.layer.cornerRadius = 30
+        cell.nameLabel.text = "John doe"
+        cell.messageLabel.text = "John doe,John doe,John doe"
+        cell.dateLabel.text = "01-01-1960"
+        return cell
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = ChatsViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
