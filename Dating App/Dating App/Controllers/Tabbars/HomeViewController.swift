@@ -10,16 +10,6 @@ import UIKit
 // MARK: The first view controller of the tabbar controller, subclassing and conforming to collectionview protocols
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    // MARK: MessagesViewController Properties
-    lazy var messagesLabel: UILabel = {
-        let message = UILabel()
-        message.text = "Messages"
-        message.font = UIFont.systemFont(ofSize: 22, weight: .bold)
-        message.translatesAutoresizingMaskIntoConstraints = false
-        message.textColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
-        return message
-    }()
-    
     lazy var divider: UIView = {
         let divider = UIView()
         divider.translatesAutoresizingMaskIntoConstraints = false
@@ -44,21 +34,18 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Meetup"
         view.backgroundColor = #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1)
         setupViews()
     }
     
     // MARK: Constraints
     func setupViews() {
-        view.addSubview(messagesLabel)
         view.addSubview(divider)
         view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
-            messagesLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            messagesLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            
-            divider.topAnchor.constraint(equalTo: messagesLabel.bottomAnchor, constant: 5),
+            divider.topAnchor.constraint(equalTo: view.topAnchor, constant: 110),
             divider.heightAnchor.constraint(equalToConstant: 2),
             divider.centerXAnchor.constraint(equalTo: divider.centerXAnchor),
             divider.widthAnchor.constraint(equalToConstant: view.frame.width),

@@ -53,7 +53,7 @@ class ChatsCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         setUpViews()
         self.backgroundColor = #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1)
-        self.layer.cornerRadius = 30
+        //self.layer.cornerRadius = 30
     }
     
     func setUpViews() {

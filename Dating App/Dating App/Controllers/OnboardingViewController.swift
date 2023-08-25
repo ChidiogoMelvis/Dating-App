@@ -85,7 +85,7 @@ class OnboardingViewController: UIViewController {
     // MARK: This next action button presents the chatscreenviewcontroller at the last screen cells or swipes to the button at the first screen cells
     @objc func nextBtnAction() {
         if pageControl.currentPage == items.count - 1 {
-            let nextScreen = TabBarViewController()
+            let nextScreen = UserCreationLoginViewController()
             nextScreen.modalPresentationStyle = .fullScreen
             nextScreen.modalTransitionStyle = .coverVertical
             self.present(nextScreen, animated: true, completion: nil)

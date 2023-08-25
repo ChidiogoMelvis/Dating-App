@@ -13,6 +13,10 @@
 		040F79882A98377700A1C08D /* UserCreationLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79872A98377700A1C08D /* UserCreationLoginViewController.swift */; };
 		040F798B2A9841BA00A1C08D /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F798A2A9841BA00A1C08D /* ChatsViewController.swift */; };
 		040F798F2A98DA2200A1C08D /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 040F798E2A98DA2200A1C08D /* Appwrite */; };
+		040F79922A993DE500A1C08D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79912A993DE500A1C08D /* Button.swift */; };
+		040F79952A9940DD00A1C08D /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79942A9940DD00A1C08D /* CreateUserViewController.swift */; };
+		040F79972A9940EA00A1C08D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79962A9940EA00A1C08D /* LoginViewController.swift */; };
+		040F79992A99411E00A1C08D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79982A99411E00A1C08D /* TextField.swift */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -32,6 +36,10 @@
 		040F79852A9834FC00A1C08D /* FindDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDatesViewController.swift; sourceTree = "<group>"; };
 		040F79872A98377700A1C08D /* UserCreationLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreationLoginViewController.swift; sourceTree = "<group>"; };
 		040F798A2A9841BA00A1C08D /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		040F79912A993DE500A1C08D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		040F79942A9940DD00A1C08D /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		040F79962A9940EA00A1C08D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		040F79982A99411E00A1C08D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		B49CBB28287058A2000C8308 /* Dating App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB2B287058A2000C8308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49CBB2D287058A2000C8308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +86,24 @@
 			path = Tabbars;
 			sourceTree = "<group>";
 		};
+		040F79902A993DC800A1C08D /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				040F79912A993DE500A1C08D /* Button.swift */,
+				040F79982A99411E00A1C08D /* TextField.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		040F79932A9940A300A1C08D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				040F79942A9940DD00A1C08D /* CreateUserViewController.swift */,
+				040F79962A9940EA00A1C08D /* LoginViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		B49CBB1F287058A2000C8308 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,7 @@
 		B49CBB2A287058A2000C8308 /* Dating App */ = {
 			isa = PBXGroup;
 			children = (
+				040F79902A993DC800A1C08D /* Reusables */,
 				B4ABDE9D287356830012F7AF /* Delegates */,
 				B4ABDE9C2873566C0012F7AF /* Model */,
 				B4ABDEA3287380B70012F7AF /* Extension+ViewController */,
@@ -115,6 +142,7 @@
 				B49CBB2F287058A2000C8308 /* ViewController.swift */,
 				B49CBB3F2871C154000C8308 /* OnboardingViewController.swift */,
 				040F79872A98377700A1C08D /* UserCreationLoginViewController.swift */,
+				040F79932A9940A300A1C08D /* Screens */,
 				B4ABDEA1287370D30012F7AF /* TabBarViewController.swift */,
 				040F798C2A9841EB00A1C08D /* Tabbars */,
 			);
@@ -257,8 +285,12 @@
 				040F79842A9834C400A1C08D /* ProfileViewController.swift in Sources */,
 				B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */,
 				B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */,
+				040F79922A993DE500A1C08D /* Button.swift in Sources */,
+				040F79952A9940DD00A1C08D /* CreateUserViewController.swift in Sources */,
 				040F79862A9834FC00A1C08D /* FindDatesViewController.swift in Sources */,
+				040F79972A9940EA00A1C08D /* LoginViewController.swift in Sources */,
 				040F79882A98377700A1C08D /* UserCreationLoginViewController.swift in Sources */,
+				040F79992A99411E00A1C08D /* TextField.swift in Sources */,
 				B49CBB462871F76E000C8308 /* OnboardingCollectionViewCell.swift in Sources */,
 				B49CBB402871C154000C8308 /* OnboardingViewController.swift in Sources */,
 			);
