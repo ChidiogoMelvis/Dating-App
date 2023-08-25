@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Appwrite
 
 class UserCreationLoginViewController: UIViewController {
 

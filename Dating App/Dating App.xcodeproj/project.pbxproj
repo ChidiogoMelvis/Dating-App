@@ -12,6 +12,7 @@
 		040F79862A9834FC00A1C08D /* FindDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79852A9834FC00A1C08D /* FindDatesViewController.swift */; };
 		040F79882A98377700A1C08D /* UserCreationLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79872A98377700A1C08D /* UserCreationLoginViewController.swift */; };
 		040F798B2A9841BA00A1C08D /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F798A2A9841BA00A1C08D /* ChatsViewController.swift */; };
+		040F798F2A98DA2200A1C08D /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 040F798E2A98DA2200A1C08D /* Appwrite */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040F798F2A98DA2200A1C08D /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +187,9 @@
 			dependencies = (
 			);
 			name = "Dating App";
+			packageProductDependencies = (
+				040F798E2A98DA2200A1C08D /* Appwrite */,
+			);
 			productName = "Dating App";
 			productReference = B49CBB28287058A2000C8308 /* Dating App.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +218,9 @@
 				Base,
 			);
 			mainGroup = B49CBB1F287058A2000C8308;
+			packageReferences = (
+				040F798D2A98DA2200A1C08D /* XCRemoteSwiftPackageReference "sdk-for-swift" */,
+			);
 			productRefGroup = B49CBB29287058A2000C8308 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,6 +470,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		040F798D2A98DA2200A1C08D /* XCRemoteSwiftPackageReference "sdk-for-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		040F798E2A98DA2200A1C08D /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040F798D2A98DA2200A1C08D /* XCRemoteSwiftPackageReference "sdk-for-swift" */;
+			productName = Appwrite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B49CBB20287058A2000C8308 /* Project object */;
 }
