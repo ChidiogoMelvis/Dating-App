@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Appwrite
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let client = Client()
+            .setEndpoint("https://cloud.appwrite.io/v1")
+            .setProject("64e89d39e7d653e911a1")
+            .setSelfSigned(true)
+        
         // Override point for customization after application launch.
         return true
     }
