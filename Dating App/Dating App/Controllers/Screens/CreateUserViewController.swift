@@ -23,7 +23,7 @@ class CreateUserViewController: UIViewController {
             return textField
         }()
     
-    let createUserButton = Button(image: UIImage(systemName: ""), label: "Create user", btnTitleColor: #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1), backgroundColor: .clear, radius: 0, imageColor: .clear)
+    let createUserButton = Button(image: UIImage(systemName: ""), label: "Signin", btnTitleColor: #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1), backgroundColor: .clear, radius: 0, imageColor: .clear)
         
         override func viewDidLoad() {
             super.viewDidLoad()

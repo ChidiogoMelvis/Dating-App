@@ -22,6 +22,7 @@ class ChatsCollectionViewCell: UICollectionViewCell {
         let name = UILabel()
         name.font = UIFont.systemFont(ofSize: 20, weight: .medium)
         name.translatesAutoresizingMaskIntoConstraints = false
+        name.textColor = #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1)
         return name
     }()
     
@@ -29,6 +30,7 @@ class ChatsCollectionViewCell: UICollectionViewCell {
         let text = UILabel()
         text.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         text.translatesAutoresizingMaskIntoConstraints = false
+        text.textColor = #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1)
         return text
     }()
     
@@ -36,6 +38,7 @@ class ChatsCollectionViewCell: UICollectionViewCell {
         let time = UILabel()
         time.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         time.translatesAutoresizingMaskIntoConstraints = false
+        time.textColor = #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1)
         return time
     }()
     
