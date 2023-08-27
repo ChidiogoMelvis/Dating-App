@@ -2,17 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GIDClientID</key>
+	<string>372818314195-290hrvs0q9jehnsllehccd0anuofm5p1.apps.googleusercontent.com</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>appwrite-callback-64e89d39e7d653e911a1</string>
+				<string>com.googleusercontent.apps.372818314195-290hrvs0q9jehnsllehccd0anuofm5p1</string>
 			</array>
-			<key>CFBundleURLName</key>
-			<string>io.appwrite</string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
 		</dict>
 	</array>
 	<key>UIApplicationSceneManifest</key>
