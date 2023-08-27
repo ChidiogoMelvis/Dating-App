@@ -32,9 +32,16 @@ class SigninViewController: UIViewController {
     
     @objc func siginUserBtnTapped() {
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
-            guard error == nil else { return }
-            
+                   guard error == nil else { return }
+            //let status =
+            if signInResult != nil {
+                let vc = TabBarViewController()
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
+            }
         }
+    }
+
         
     }
-}
+

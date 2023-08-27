@@ -13,9 +13,14 @@ class ChatsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTitleColor()
         configureChatsTextField()
         title = "Chats"
         view.backgroundColor = .white
+    }
+    
+    func setTitleColor() {
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)]
     }
     
     func configureChatsTextField() {
