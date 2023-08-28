@@ -16,7 +16,7 @@ class ProfileViewController: UIViewController {
         img.contentMode = .scaleAspectFill
         img.backgroundColor = .white
         img.translatesAutoresizingMaskIntoConstraints = false
-        img.layer.cornerRadius = 50
+        img.layer.cornerRadius = 100
         img.clipsToBounds = true
         return img
     }()
@@ -40,14 +40,21 @@ class ProfileViewController: UIViewController {
         view.addSubview(profileImage)
         view.addSubview(usernameLabel)
         view.addSubview(gmailLabel)
+//        if let profileImageURL = GIDSignIn.sharedInstance.currentUser?.profile?.imageURL(withDimension: 100) {
+//            if let imageData = try? Data(contentsOf: profileImageURL) {
+//                if let image = UIImage(data: imageData) {
+//                    profileImage.image = image
+//                }
+//            }
+//        }
         usernameLabel.text = GIDSignIn.sharedInstance.currentUser?.profile?.name
         gmailLabel.text = GIDSignIn.sharedInstance.currentUser?.profile?.email
         
         NSLayoutConstraint.activate([
             profileImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
             profileImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            profileImage.heightAnchor.constraint(equalToConstant: 100),
-            profileImage.widthAnchor.constraint(equalToConstant: 100),
+            profileImage.heightAnchor.constraint(equalToConstant: 200),
+            profileImage.widthAnchor.constraint(equalToConstant: 200),
             
             usernameLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 10),
             usernameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),

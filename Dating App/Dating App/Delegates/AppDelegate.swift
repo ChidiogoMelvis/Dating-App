@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
       }
 
-      // Handle other custom URL types.
-
       // If not handled by this app, return false.
       return false
     }

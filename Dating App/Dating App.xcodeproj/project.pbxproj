@@ -17,6 +17,7 @@
 		040F79A42A9B99AD00A1C08D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 040F79A32A9B99AD00A1C08D /* GoogleSignIn */; };
 		040F79A62A9B99AD00A1C08D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 040F79A52A9B99AD00A1C08D /* GoogleSignInSwift */; };
 		040F79AA2A9BDB1400A1C08D /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79A92A9BDB1400A1C08D /* Label.swift */; };
+		040F79B02A9CC35800A1C08D /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 040F79AF2A9CC35800A1C08D /* PusherSwift */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040F79B02A9CC35800A1C08D /* PusherSwift in Frameworks */,
 				040F79A42A9B99AD00A1C08D /* GoogleSignIn in Frameworks */,
 				040F79A62A9B99AD00A1C08D /* GoogleSignInSwift in Frameworks */,
 			);
@@ -217,6 +219,7 @@
 			packageProductDependencies = (
 				040F79A32A9B99AD00A1C08D /* GoogleSignIn */,
 				040F79A52A9B99AD00A1C08D /* GoogleSignInSwift */,
+				040F79AF2A9CC35800A1C08D /* PusherSwift */,
 			);
 			productName = "Dating App";
 			productReference = B49CBB28287058A2000C8308 /* Dating App.app */;
@@ -248,6 +251,7 @@
 			mainGroup = B49CBB1F287058A2000C8308;
 			packageReferences = (
 				040F79A22A9B99AD00A1C08D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				040F79AE2A9CC35800A1C08D /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */,
 			);
 			productRefGroup = B49CBB29287058A2000C8308 /* Products */;
 			projectDirPath = "";
@@ -511,6 +515,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		040F79AE2A9CC35800A1C08D /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -523,6 +535,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 040F79A22A9B99AD00A1C08D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		040F79AF2A9CC35800A1C08D /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040F79AE2A9CC35800A1C08D /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
