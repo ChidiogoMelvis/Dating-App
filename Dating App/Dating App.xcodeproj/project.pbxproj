@@ -27,6 +27,7 @@
 		B49CBB462871F76E000C8308 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB452871F76E000C8308 /* OnboardingCollectionViewCell.swift */; };
 		B4ABDEA2287370D30012F7AF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEA1287370D30012F7AF /* TabBarViewController.swift */; };
 		B4ABDEB1287583EA0012F7AF /* ChatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ABDEB0287583EA0012F7AF /* ChatsCollectionViewCell.swift */; };
+		F1A119622952371F0E4FAB3B /* Pods_Dating_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB01B6493C1DD073A30079E /* Pods_Dating_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,9 @@
 		040F79982A99411E00A1C08D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		040F79A92A9BDB1400A1C08D /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		04AEA8042A9E44FC009F6A86 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		313E26F6E2E8710928132257 /* Pods-Dating App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating App.debug.xcconfig"; path = "Target Support Files/Pods-Dating App/Pods-Dating App.debug.xcconfig"; sourceTree = "<group>"; };
+		76D18B12BCF31489E1D1236A /* Pods-Dating App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating App.release.xcconfig"; path = "Target Support Files/Pods-Dating App/Pods-Dating App.release.xcconfig"; sourceTree = "<group>"; };
+		9AB01B6493C1DD073A30079E /* Pods_Dating_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dating_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB28287058A2000C8308 /* Dating App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB2B287058A2000C8308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49CBB2D287058A2000C8308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A119622952371F0E4FAB3B /* Pods_Dating_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +106,31 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		1B4EE523C6FE8CF94408C334 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				313E26F6E2E8710928132257 /* Pods-Dating App.debug.xcconfig */,
+				76D18B12BCF31489E1D1236A /* Pods-Dating App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A84678F04879040947B3CF18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AB01B6493C1DD073A30079E /* Pods_Dating_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B49CBB1F287058A2000C8308 = {
 			isa = PBXGroup;
 			children = (
 				B49CBB2A287058A2000C8308 /* Dating App */,
 				B49CBB29287058A2000C8308 /* Products */,
+				1B4EE523C6FE8CF94408C334 /* Pods */,
+				A84678F04879040947B3CF18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B49CBB3C287058A8000C8308 /* Build configuration list for PBXNativeTarget "Dating App" */;
 			buildPhases = (
+				77A901B68DD66914C4DF6D76 /* [CP] Check Pods Manifest.lock */,
 				B49CBB24287058A2000C8308 /* Sources */,
 				B49CBB25287058A2000C8308 /* Frameworks */,
 				B49CBB26287058A2000C8308 /* Resources */,
+				1B1E603EEA5C69B328F8E6BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,8 +268,6 @@
 				Base,
 			);
 			mainGroup = B49CBB1F287058A2000C8308;
-			packageReferences = (
-			);
 			productRefGroup = B49CBB29287058A2000C8308 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,6 +289,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B1E603EEA5C69B328F8E6BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dating App/Pods-Dating App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dating App/Pods-Dating App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dating App/Pods-Dating App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A901B68DD66914C4DF6D76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dating App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B49CBB24287058A2000C8308 /* Sources */ = {
@@ -420,6 +487,7 @@
 		};
 		B49CBB3D287058A8000C8308 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 313E26F6E2E8710928132257 /* Pods-Dating App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +522,7 @@
 		};
 		B49CBB3E287058A8000C8308 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D18B12BCF31489E1D1236A /* Pods-Dating App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
