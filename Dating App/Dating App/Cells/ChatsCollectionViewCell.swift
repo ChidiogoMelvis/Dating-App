@@ -59,6 +59,8 @@ class ChatsCollectionViewCell: UICollectionViewCell {
         //self.layer.cornerRadius = 30
     }
     
+    
+    
     func setUpViews() {
         self.addSubview(profileImage)
         self.addSubview(messageView)

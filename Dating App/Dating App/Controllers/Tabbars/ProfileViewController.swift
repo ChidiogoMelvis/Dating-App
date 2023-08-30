@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import GoogleSignIn
-import GoogleSignInSwift
+
+//import GoogleSignInSwift
 
 class ProfileViewController: UIViewController {
     
@@ -40,16 +40,7 @@ class ProfileViewController: UIViewController {
         view.addSubview(profileImage)
         view.addSubview(usernameLabel)
         view.addSubview(gmailLabel)
-//        if let profileImageURL = GIDSignIn.sharedInstance.currentUser?.profile?.imageURL(withDimension: 100) {
-//            if let imageData = try? Data(contentsOf: profileImageURL) {
-//                if let image = UIImage(data: imageData) {
-//                    profileImage.image = image
-//                }
-//            }
-//        }
-        usernameLabel.text = GIDSignIn.sharedInstance.currentUser?.profile?.name
-        gmailLabel.text = GIDSignIn.sharedInstance.currentUser?.profile?.email
-        
+
         NSLayoutConstraint.activate([
             profileImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
             profileImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),

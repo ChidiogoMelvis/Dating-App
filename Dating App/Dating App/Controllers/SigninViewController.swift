@@ -6,12 +6,11 @@
 //
 
 import UIKit
-import GoogleSignIn
-import GoogleSignInSwift
+
 
 class SigninViewController: UIViewController {
     
-    let signinButton = Button(image: UIImage(systemName: ""), label: "Signin User?", btnTitleColor: #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1), backgroundColor: .clear, radius: 25, imageColor: .clear)
+    let signinButton = Button(image: UIImage(systemName: ""), label: "Signin User with Gmail?", btnTitleColor: #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1), backgroundColor: .clear, radius: 25, imageColor: .clear)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +30,7 @@ class SigninViewController: UIViewController {
     }
     
     @objc func siginUserBtnTapped() {
-        GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
-                   guard error == nil else { return }
-            //let status =
-            if signInResult != nil {
-                let vc = TabBarViewController()
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true)
-            }
-        }
+        
     }
 
         

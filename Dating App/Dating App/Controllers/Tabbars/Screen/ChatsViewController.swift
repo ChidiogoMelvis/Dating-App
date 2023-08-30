@@ -9,29 +9,43 @@ import UIKit
 
 class ChatsViewController: UIViewController {
     
-    let chatsTextField = UITextField()
+    lazy var chatsTextField: UITextField = {
+        let chatsTextField = UITextField()
+        chatsTextField.placeholder = "Message"
+        chatsTextField.backgroundColor = #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1);
+        chatsTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 35, height: self.view.frame.height))
+        chatsTextField.leftViewMode = .always
+        chatsTextField.translatesAutoresizingMaskIntoConstraints = false
+        chatsTextField.layer.cornerRadius = 8
+        return chatsTextField
+    }()
+    
+    let sendButton = Button(image: UIImage(systemName: ""), label: "Enter", btnTitleColor: #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1), backgroundColor: .clear, radius: 0, imageColor: .clear)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setTitleColor()
-        configureChatsTextField()
+        configureViews()
         title = "Chats"
-        view.backgroundColor = .white
+        view.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
     }
     
     func setTitleColor() {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)]
     }
     
-    func configureChatsTextField() {
-        chatsTextField.placeholder = "Message"
-        chatsTextField.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1);      chatsTextField.translatesAutoresizingMaskIntoConstraints = false
+    func configureViews() {
         view.addSubview(chatsTextField)
-        chatsTextField.layer.cornerRadius = 30
-        chatsTextField.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -90).isActive = true
-        chatsTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 14).isActive = true
-        chatsTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -14).isActive = true
-        chatsTextField.heightAnchor.constraint(equalToConstant: 55).isActive = true
+        view.addSubview(sendButton)
+        NSLayoutConstraint.activate([
+        chatsTextField.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -90),
+        chatsTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 14),
+        chatsTextField.widthAnchor.constraint(equalToConstant: 300),
+        chatsTextField.heightAnchor.constraint(equalToConstant: 45),
+        
+        sendButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -95),
+        sendButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
+        ])
     }
     
 }
