@@ -6,33 +6,41 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 
 class SigninViewController: UIViewController {
     
-    let signinButton = Button(image: UIImage(systemName: ""), label: "Signin User with Gmail?", btnTitleColor: #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1), backgroundColor: .clear, radius: 25, imageColor: .clear)
+    var signinButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUi()
+        setupCustomButton()
+        setupViews()
         view.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
     }
     
-    func setupUi() {
-        view.addSubview(signinButton)
+    func setupCustomButton() {
+        signinButton = GIDSignInButton()
+        signinButton.style = .wide
         signinButton.addTarget(self, action: #selector(siginUserBtnTapped), for: .touchUpInside)
-        
+        signinButton.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func setupViews() {
+        view.addSubview(signinButton)
         NSLayoutConstraint.activate([
             signinButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
-            signinButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 14),
-            signinButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -14),
+            signinButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            signinButton.heightAnchor.constraint(equalToConstant: 45),
+            signinButton.widthAnchor.constraint(equalToConstant: 300)
         ])
     }
     
     @objc func siginUserBtnTapped() {
         
     }
-
-        
-    }
+    
+    
+}
 

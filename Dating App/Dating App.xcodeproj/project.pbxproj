@@ -112,7 +112,6 @@
 				313E26F6E2E8710928132257 /* Pods-Dating App.debug.xcconfig */,
 				76D18B12BCF31489E1D1236A /* Pods-Dating App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
