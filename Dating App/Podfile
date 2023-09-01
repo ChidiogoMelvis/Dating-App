@@ -7,5 +7,9 @@ target 'Dating App' do
 
   # Pods for Dating App
 pod 'GoogleSignIn'
+pod 'FirebaseAuth'
+	pod 'FirebaseFirestore'
+	pod 'FirebaseCore'
+	pod 'Firebase/Database'	
 
 end
