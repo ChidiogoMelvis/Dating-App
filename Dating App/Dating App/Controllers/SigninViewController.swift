@@ -40,13 +40,13 @@ class SigninViewController: UIViewController {
     
     @objc func siginUserBtnTapped() {
         
-        GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
-           guard error == nil else { return }
+//        GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
+//           guard error == nil else { return }
 
            // If sign in succeeded, display the app's main content View.
          }
         
-    }
+    
     
     
 }

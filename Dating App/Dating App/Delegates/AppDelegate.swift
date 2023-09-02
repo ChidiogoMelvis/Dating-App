@@ -8,7 +8,6 @@
 import UIKit
 import GoogleSignIn
 
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
