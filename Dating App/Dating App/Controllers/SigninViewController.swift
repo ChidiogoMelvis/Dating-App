@@ -7,7 +7,7 @@
 
 import UIKit
 import GoogleSignIn
-
+import Firebase
 
 class SigninViewController: UIViewController {
     
@@ -15,9 +15,17 @@ class SigninViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureFireBaseGidc()
         setupCustomButton()
         setupViews()
         view.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
+    }
+    
+    func configureFireBaseGidc() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
     }
     
     func setupCustomButton() {
@@ -39,15 +47,32 @@ class SigninViewController: UIViewController {
     }
     
     @objc func siginUserBtnTapped() {
-        
-//        GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
-//           guard error == nil else { return }
-
-           // If sign in succeeded, display the app's main content View.
-         }
-        
-    
-    
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
+            guard error == nil else {
+                print("error signing in\(error!.localizedDescription)")
+                return
+            }
+            
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString
+            else {
+                return
+            }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: user.accessToken.tokenString)
+            
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    print("error signing in\(error.localizedDescription)")
+                    return
+                }
+                let vc = TabBarViewController()
+                vc.modalPresentationStyle = .fullScreen
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
     
 }
 
