@@ -39,6 +39,7 @@
 		045046DC2AA5452000204469 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 045046DB2AA5452000204469 /* FirebaseStorage */; };
 		045046DE2AA5452000204469 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 045046DD2AA5452000204469 /* FirebaseStorageCombine-Community */; };
 		045046E12AA5570700204469 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045046E02AA5570700204469 /* GoogleService-Info.plist */; };
+		045046E32AA6C09D00204469 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046E22AA6C09D00204469 /* MessageModel.swift */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		040F79982A99411E00A1C08D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		040F79A92A9BDB1400A1C08D /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		045046E02AA5570700204469 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		045046E22AA6C09D00204469 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		B49CBB28287058A2000C8308 /* Dating App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB2B287058A2000C8308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49CBB2D287058A2000C8308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				B49CBB412871EAA5000C8308 /* OnboardingModel.swift */,
+				045046E22AA6C09D00204469 /* MessageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				040F798B2A9841BA00A1C08D /* ChatsViewController.swift in Sources */,
 				B49CBB442871EF56000C8308 /* Extension+OnboardingViewController.swift in Sources */,
 				B49CBB422871EAA6000C8308 /* OnboardingModel.swift in Sources */,
+				045046E32AA6C09D00204469 /* MessageModel.swift in Sources */,
 				040F79842A9834C400A1C08D /* ProfileViewController.swift in Sources */,
 				B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */,
 				B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */,
@@ -499,10 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SFJ8H3MDYC;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dating App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -534,10 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SFJ8H3MDYC;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dating App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

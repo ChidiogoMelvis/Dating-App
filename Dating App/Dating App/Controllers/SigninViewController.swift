@@ -64,12 +64,12 @@ class SigninViewController: UIViewController {
             
             Auth.auth().signIn(with: credential) { authResult, error in
                 if let error = error {
-                    print("error signing in\(error.localizedDescription)")
+                    print("Error signing in: \(error.localizedDescription)")
                     return
                 }
                 let vc = TabBarViewController()
                 vc.modalPresentationStyle = .fullScreen
-                self.navigationController?.pushViewController(vc, animated: true)
+                self.present(vc, animated: true)
             }
         }
     }
