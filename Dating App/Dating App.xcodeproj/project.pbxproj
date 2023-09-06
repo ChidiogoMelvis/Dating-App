@@ -40,6 +40,8 @@
 		045046DE2AA5452000204469 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 045046DD2AA5452000204469 /* FirebaseStorageCombine-Community */; };
 		045046E12AA5570700204469 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045046E02AA5570700204469 /* GoogleService-Info.plist */; };
 		045046E32AA6C09D00204469 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046E22AA6C09D00204469 /* MessageModel.swift */; };
+		045046E52AA7DAAB00204469 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046E42AA7DAAB00204469 /* UserModel.swift */; };
+		045046E82AA7F1B000204469 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046E72AA7F1B000204469 /* DatabaseManager.swift */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		040F79A92A9BDB1400A1C08D /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		045046E02AA5570700204469 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		045046E22AA6C09D00204469 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		045046E42AA7DAAB00204469 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		045046E72AA7F1B000204469 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		B49CBB28287058A2000C8308 /* Dating App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB2B287058A2000C8308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49CBB2D287058A2000C8308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,11 +146,12 @@
 			path = Reusables;
 			sourceTree = "<group>";
 		};
-		040F799F2A9B608E00A1C08D /* ViewModel */ = {
+		045046E62AA7F0B800204469 /* DatabaseManager */ = {
 			isa = PBXGroup;
 			children = (
+				045046E72AA7F1B000204469 /* DatabaseManager.swift */,
 			);
-			path = ViewModel;
+			path = DatabaseManager;
 			sourceTree = "<group>";
 		};
 		B49CBB1F287058A2000C8308 = {
@@ -168,8 +173,8 @@
 		B49CBB2A287058A2000C8308 /* Dating App */ = {
 			isa = PBXGroup;
 			children = (
+				045046E62AA7F0B800204469 /* DatabaseManager */,
 				045046E02AA5570700204469 /* GoogleService-Info.plist */,
-				040F799F2A9B608E00A1C08D /* ViewModel */,
 				040F79902A993DC800A1C08D /* Reusables */,
 				B4ABDE9D287356830012F7AF /* Delegates */,
 				B4ABDE9C2873566C0012F7AF /* Model */,
@@ -200,6 +205,7 @@
 			children = (
 				B49CBB412871EAA5000C8308 /* OnboardingModel.swift */,
 				045046E22AA6C09D00204469 /* MessageModel.swift */,
+				045046E42AA7DAAB00204469 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,9 +364,11 @@
 				B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */,
 				B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */,
 				040F79922A993DE500A1C08D /* Button.swift in Sources */,
+				045046E82AA7F1B000204469 /* DatabaseManager.swift in Sources */,
 				040F79862A9834FC00A1C08D /* FindDatesViewController.swift in Sources */,
 				040F79882A98377700A1C08D /* SigninViewController.swift in Sources */,
 				040F79AA2A9BDB1400A1C08D /* Label.swift in Sources */,
+				045046E52AA7DAAB00204469 /* UserModel.swift in Sources */,
 				040F79992A99411E00A1C08D /* TextField.swift in Sources */,
 				B49CBB462871F76E000C8308 /* OnboardingCollectionViewCell.swift in Sources */,
 				B49CBB402871C154000C8308 /* OnboardingViewController.swift in Sources */,

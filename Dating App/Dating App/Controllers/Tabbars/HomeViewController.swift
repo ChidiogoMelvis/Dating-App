@@ -41,7 +41,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func setTitleColor() {
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.8715636134, green: 0.8204910159, blue: 0.953423202, alpha: 1)]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
     // MARK: Constraints
