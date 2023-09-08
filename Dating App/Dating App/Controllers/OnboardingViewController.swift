@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+
 // MARK: - Elements/Properties in the Onboarding View controller
 class OnboardingViewController: UIViewController {
     

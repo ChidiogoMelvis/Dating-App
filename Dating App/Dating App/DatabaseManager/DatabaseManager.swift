@@ -8,12 +8,11 @@
 import Foundation
 import FirebaseDatabase
 
-class DatabaseManager {
+final class DatabaseManager {
     static let shared = DatabaseManager()
         
     let database = Database.database().reference()
     
-   
     func test() {
         database.child("user").setValue(["name": "John Doe"])
     }

@@ -20,7 +20,6 @@ class SigninViewController: UIViewController {
         setupViews()
         view.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
         DatabaseManager.shared.test()
-
     }
 
     func configureFireBaseGidc() {
@@ -49,7 +48,8 @@ class SigninViewController: UIViewController {
     }
 
     @objc func siginUserBtnTapped() {
-        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [weak self] result, error in
+            guard let strongSelf = self else {return}
             guard error == nil else {
                 print("error signing in\(error!.localizedDescription)")
                 return
@@ -71,7 +71,8 @@ class SigninViewController: UIViewController {
                 }
                 let vc = TabBarViewController()
                 vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true)
+                self?.present(vc, animated: true)
+                strongSelf.navigationController?.dismiss(animated: true)
             }
         }
     }
