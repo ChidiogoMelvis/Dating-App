@@ -19,7 +19,7 @@ class SigninViewController: UIViewController {
         setupCustomButton()
         setupViews()
         view.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.07450980392, blue: 0.1843137255, alpha: 1)
-        //DatabaseManager.shared.test()
+        DatabaseManager.shared.test()
 
     }
 
