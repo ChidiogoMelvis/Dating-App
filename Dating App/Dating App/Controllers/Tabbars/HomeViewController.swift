@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import MessageKit
 
 // MARK: The first view controller of the tabbar controller, subclassing and conforming to collectionview protocols
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

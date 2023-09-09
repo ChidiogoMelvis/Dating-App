@@ -16,6 +16,8 @@
 		040F79992A99411E00A1C08D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79982A99411E00A1C08D /* TextField.swift */; };
 		040F79AA2A9BDB1400A1C08D /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79A92A9BDB1400A1C08D /* Label.swift */; };
 		042D0C3D2AAAB2940097D1FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042D0C3C2AAAB2940097D1FA /* GoogleService-Info.plist */; };
+		042D0C402AABF5C90097D1FA /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 042D0C3F2AABF5C90097D1FA /* MessageKit */; };
+		042D0C432AABF68A0097D1FA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 042D0C422AABF68A0097D1FA /* SDWebImage */; };
 		045046B12AA542FE00204469 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 045046B02AA542FE00204469 /* GoogleSignIn */; };
 		045046B32AA542FE00204469 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 045046B22AA542FE00204469 /* GoogleSignInSwift */; };
 		045046B62AA5452000204469 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 045046B52AA5452000204469 /* FirebaseAnalytics */; };
@@ -87,6 +89,8 @@
 				045046CA2AA5452000204469 /* FirebaseFirestoreSwift in Frameworks */,
 				045046C02AA5452000204469 /* FirebaseDatabase in Frameworks */,
 				045046B62AA5452000204469 /* FirebaseAnalytics in Frameworks */,
+				042D0C432AABF68A0097D1FA /* SDWebImage in Frameworks */,
+				042D0C402AABF5C90097D1FA /* MessageKit in Frameworks */,
 				045046DC2AA5452000204469 /* FirebaseStorage in Frameworks */,
 				045046C62AA5452000204469 /* FirebaseFirestore in Frameworks */,
 			);
@@ -259,6 +263,8 @@
 				045046CB2AA5452000204469 /* FirebaseFunctions */,
 				045046D52AA5452000204469 /* FirebaseMessaging */,
 				045046DB2AA5452000204469 /* FirebaseStorage */,
+				042D0C3F2AABF5C90097D1FA /* MessageKit */,
+				042D0C422AABF68A0097D1FA /* SDWebImage */,
 			);
 			productName = "Dating App";
 			productReference = B49CBB28287058A2000C8308 /* Dating App.app */;
@@ -291,6 +297,8 @@
 			packageReferences = (
 				045046AF2AA542FE00204469 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				045046B42AA5452000204469 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				042D0C3E2AABF5C90097D1FA /* XCRemoteSwiftPackageReference "MessageKit" */,
+				042D0C412AABF68A0097D1FA /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = B49CBB29287058A2000C8308 /* Products */;
 			projectDirPath = "";
@@ -558,6 +566,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		042D0C3E2AABF5C90097D1FA /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		042D0C412AABF68A0097D1FA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		045046AF2AA542FE00204469 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -577,6 +601,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		042D0C3F2AABF5C90097D1FA /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 042D0C3E2AABF5C90097D1FA /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		042D0C422AABF68A0097D1FA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 042D0C412AABF68A0097D1FA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		045046B02AA542FE00204469 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 045046AF2AA542FE00204469 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
