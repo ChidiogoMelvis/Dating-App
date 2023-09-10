@@ -1,1 +1,1 @@
-# Dating-App
+A chatting project created using programmatic ui with Firebase as the BaaS.
