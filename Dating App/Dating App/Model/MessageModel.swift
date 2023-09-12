@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import MessageKit
 
-struct Message {
-    let senderID: String
-    let receiverID: String
-    let messageLabel: String
-    let time: Date
+struct ChatMessage: MessageType{
+    var sender: MessageKit.SenderType
+    var messageId: String
+    var sentDate: Date
+    var kind: MessageKit.MessageKind
 }
 

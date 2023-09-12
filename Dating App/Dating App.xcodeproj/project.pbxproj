@@ -11,7 +11,6 @@
 		040F79842A9834C400A1C08D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79832A9834C400A1C08D /* ProfileViewController.swift */; };
 		040F79862A9834FC00A1C08D /* FindDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79852A9834FC00A1C08D /* FindDatesViewController.swift */; };
 		040F79882A98377700A1C08D /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79872A98377700A1C08D /* SigninViewController.swift */; };
-		040F798B2A9841BA00A1C08D /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F798A2A9841BA00A1C08D /* ChatsViewController.swift */; };
 		040F79922A993DE500A1C08D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79912A993DE500A1C08D /* Button.swift */; };
 		040F79992A99411E00A1C08D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79982A99411E00A1C08D /* TextField.swift */; };
 		040F79AA2A9BDB1400A1C08D /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F79A92A9BDB1400A1C08D /* Label.swift */; };
@@ -33,7 +32,6 @@
 		045046E32AA6C09D00204469 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046E22AA6C09D00204469 /* MessageModel.swift */; };
 		045046E52AA7DAAB00204469 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046E42AA7DAAB00204469 /* UserModel.swift */; };
 		045046E82AA7F1B000204469 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046E72AA7F1B000204469 /* DatabaseManager.swift */; };
-		046791182AAFB8B800DBC161 /* Extensions+HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046791172AAFB8B800DBC161 /* Extensions+HomeViewController.swift */; };
 		B49CBB2C287058A2000C8308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2B287058A2000C8308 /* AppDelegate.swift */; };
 		B49CBB2E287058A2000C8308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2D287058A2000C8308 /* SceneDelegate.swift */; };
 		B49CBB30287058A2000C8308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CBB2F287058A2000C8308 /* ViewController.swift */; };
@@ -52,7 +50,6 @@
 		040F79832A9834C400A1C08D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		040F79852A9834FC00A1C08D /* FindDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDatesViewController.swift; sourceTree = "<group>"; };
 		040F79872A98377700A1C08D /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
-		040F798A2A9841BA00A1C08D /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		040F79912A993DE500A1C08D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		040F79982A99411E00A1C08D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		040F79A92A9BDB1400A1C08D /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
@@ -60,7 +57,6 @@
 		045046E22AA6C09D00204469 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		045046E42AA7DAAB00204469 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		045046E72AA7F1B000204469 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		046791172AAFB8B800DBC161 /* Extensions+HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+HomeViewController.swift"; sourceTree = "<group>"; };
 		B49CBB28287058A2000C8308 /* Dating App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49CBB2B287058A2000C8308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49CBB2D287058A2000C8308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,19 +97,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040F79892A98419C00A1C08D /* Screen */ = {
-			isa = PBXGroup;
-			children = (
-				040F798A2A9841BA00A1C08D /* ChatsViewController.swift */,
-			);
-			path = Screen;
-			sourceTree = "<group>";
-		};
 		040F798C2A9841EB00A1C08D /* Tabbars */ = {
 			isa = PBXGroup;
 			children = (
 				040F79812A98347400A1C08D /* HomeViewController.swift */,
-				040F79892A98419C00A1C08D /* Screen */,
 				040F79852A9834FC00A1C08D /* FindDatesViewController.swift */,
 				040F79832A9834C400A1C08D /* ProfileViewController.swift */,
 			);
@@ -232,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				B49CBB432871EF56000C8308 /* Extension+OnboardingViewController.swift */,
-				046791172AAFB8B800DBC161 /* Extensions+HomeViewController.swift */,
 			);
 			path = "Extension+ViewController";
 			sourceTree = "<group>";
@@ -330,12 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046791182AAFB8B800DBC161 /* Extensions+HomeViewController.swift in Sources */,
 				040F79822A98347400A1C08D /* HomeViewController.swift in Sources */,
 				B4ABDEA2287370D30012F7AF /* TabBarViewController.swift in Sources */,
 				B49CBB30287058A2000C8308 /* ViewController.swift in Sources */,
 				B4ABDEB1287583EA0012F7AF /* ChatsCollectionViewCell.swift in Sources */,
-				040F798B2A9841BA00A1C08D /* ChatsViewController.swift in Sources */,
 				B49CBB442871EF56000C8308 /* Extension+OnboardingViewController.swift in Sources */,
 				B49CBB422871EAA6000C8308 /* OnboardingModel.swift in Sources */,
 				045046E32AA6C09D00204469 /* MessageModel.swift in Sources */,
