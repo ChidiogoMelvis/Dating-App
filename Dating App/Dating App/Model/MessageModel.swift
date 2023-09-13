@@ -15,3 +15,8 @@ struct ChatMessage: MessageType{
     var kind: MessageKit.MessageKind
 }
 
+struct Sender: SenderType {
+    var senderId: String
+    
+    var displayName: String
+}
