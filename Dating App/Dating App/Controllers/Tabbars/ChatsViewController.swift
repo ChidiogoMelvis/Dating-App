@@ -10,17 +10,16 @@ import MessageKit
 import Messages
 
 class ChatsViewController: MessagesViewController {
-
+    
     let messages: [ChatMessage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
-
+    
 }
-
 
 extension ChatsViewController: MessagesDataSource {
     var currentSender: MessageKit.SenderType {

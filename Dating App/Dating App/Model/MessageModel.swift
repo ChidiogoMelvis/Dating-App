@@ -17,6 +17,5 @@ struct ChatMessage: MessageType{
 
 struct Sender: SenderType {
     var senderId: String
-    
     var displayName: String
 }
