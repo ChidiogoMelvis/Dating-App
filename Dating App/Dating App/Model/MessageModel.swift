@@ -20,7 +20,6 @@ struct Sender: SenderType {
     var displayName: String
 }
 
-enum MessageKind {
+public enum MessageKind {
     
 }
-
